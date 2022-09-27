@@ -25,3 +25,15 @@ pnpm create next-app --example with-tailwindcss with-tailwindcss-app
 ```
 
 Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+
+
+
+
+npm run dev
+npm install @heroicons/react
+npm install tailwindcss-textshadow
+npm install tailwind-scrollbar-hide
+npm install tailwind-scrollbar
+npm install recoil
+npm install @mui/material @emotion/react @emotion/styled
+npm install react-player
