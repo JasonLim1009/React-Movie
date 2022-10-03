@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import Header from './components/Header'
-import Banner from './components/Banner'
-import requests from '../utils/requests'
+import Banner from '../components/Banner'
+import Header from '../components/Header'
+import Row from '../components/Row'
 import { Movie } from '../typings'
-import Row from './components/Row'
-import { modalState } from './atoms/modalAtom'
-import Modal from './components/Modal'
+import requests from '../utils/requests'
+import { modalState } from '../atoms/modalAtom'
 import { useRecoilValue } from 'recoil'
+import Modal from '../components/Modal'
 
 interface Props {
   netflixOriginals: Movie[]
@@ -30,15 +30,14 @@ const Home = ({
 }: Props) => {
   console.log(netflixOriginals);
 
- const showModal = useRecoilValue(modalState)
+  const showModal = useRecoilValue(modalState)
 
   return (
-    <div className="relative h-screen bg-gradient-to-b from-gray-900/10 to-[#010511] lg:h-[140vh]">
+    <div className="relative h-screen bg-gradient-to-b lg:h-[140vh]">
       <Head>
         <title>React Movie</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Header />
       <main className="relative pl-4 pb-24 lg:space-y-24 lg:pl-16 ">
         <Banner netflixOriginals={netflixOriginals} />
@@ -61,7 +60,6 @@ const Home = ({
 export default Home
 
 export const getServerSideProps = async () => {
-
   const [
     netflixOriginals,
     trendingNow,
