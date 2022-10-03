@@ -1,5 +1,6 @@
 # Next.js + Tailwind CSS Example
 
+![Screenshot_1](https://user-images.githubusercontent.com/107684179/193591300-5c6affbd-6189-4d23-b4fc-5c00608dc8e8.png)
 
 
 npm run dev
